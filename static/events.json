@@ -242,7 +242,10 @@
 			"event_end_datetime": "2025-05-12T17:00:00+05:30",
 			"venue": "Alumni Hall, NIT Silchar",
 			"poster_image": "poster.jpg",
-			"leaderboard": [],
+			"leaderboard": [
+				{ "participant_id": "RP_101", "name": "Amit Kumar", "points": "1st Prize" },
+				{ "participant_id": "RP_102", "name": "Sneha Roy", "points": "2nd Prize" }
+			],
 			"feedback_form": "https://forms.gle/alumnitalks2025",
 			"post_event_task": "Submit your takeaways from the talks.",
 			"resources": [
@@ -296,7 +299,10 @@
 			"event_end_datetime": "2025-01-12T16:00:00+05:30",
 			"venue": "Placement Cell, NIT Silchar",
 			"poster_image": "poster.jpg",
-			"leaderboard": [],
+			"leaderboard": [
+				{ "participant_id": "RP_101", "name": "Amit Kumar", "points": "1st Prize" },
+				{ "participant_id": "RP_102", "name": "Sneha Roy", "points": "2nd Prize" }
+			],
 			"feedback_form": "https://forms.gle/careerworkshop2025",
 			"post_event_task": "Submit your updated resumes.",
 			"resources": [
