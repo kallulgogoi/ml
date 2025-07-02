@@ -106,12 +106,12 @@
 							left: 0,
 							behavior: 'auto'
 						});
-					}, 200);
+					}, 300);
 				}
 			};
 
-			// Scroll every 3 seconds (1s for animation + 2s pause)
-			scrollInterval = setInterval(scrollToNext, 3000);
+			// Scroll every 1 seconds
+			scrollInterval = setInterval(scrollToNext, 1000);
 
 			return () => clearInterval(scrollInterval);
 		}
@@ -156,7 +156,7 @@
 							id="email"
 							bind:value={email}
 							class="w-full rounded-lg border border-gray-600 bg-gray-700 px-3 py-2 text-white placeholder-gray-400 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500"
-							placeholder="your@institute.edu"
+							placeholder="nit_ug_24@cse.nits.in"
 							required
 						/>
 					</div>
