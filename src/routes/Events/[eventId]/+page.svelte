@@ -66,55 +66,54 @@
 	}
 
 	// auto-scroll gallery for past events
+
 	onMount(() => {
 		if (isPast && event.gallery?.length > 0) {
-			const gallery = document.querySelector('.gallery-scroller') as HTMLElement;
-			if (gallery) {
-				// Clone all items for seamless looping
-				const items = gallery.querySelectorAll('.gallery-item');
-				items.forEach((item) => {
-					const clone = item.cloneNode(true);
-					gallery.appendChild(clone);
+			const gallery = document.querySelector('.gallery-scroller');
+			if (!gallery) return;
+
+			// Clone items for seamless looping
+			gallery.innerHTML += gallery.innerHTML;
+
+			const items = gallery.querySelectorAll('.gallery-item');
+			if (items.length === 0) return;
+
+			const itemWidth = items[0].clientWidth;
+			const gap = 24; // matches gap-6 (1.5rem)
+			const scrollAmount = itemWidth + gap;
+			let currentIndex = 0;
+			let isPaused = false;
+			let scrollInterval;
+
+			// Pause control
+			gallery.addEventListener('mouseenter', () => (isPaused = true));
+			gallery.addEventListener('mouseleave', () => (isPaused = false));
+
+			const scrollToNext = () => {
+				if (isPaused) return;
+
+				currentIndex++;
+				gallery.scrollTo({
+					left: currentIndex * scrollAmount,
+					behavior: 'smooth'
 				});
 
-				let scrollPos = 0;
-				const scrollSpeed = 2;
-				let isScrolling = true;
-				let animationId: number;
-				let lastTime = 0;
-				const fps = 60;
-				const interval = 1000 / fps;
+				// Reset when we reach the cloned set
+				if (currentIndex >= items.length / 2) {
+					setTimeout(() => {
+						currentIndex = 0;
+						gallery.scrollTo({
+							left: 0,
+							behavior: 'auto'
+						});
+					}, 1000);
+				}
+			};
 
-				// Pause on hover
-				gallery.addEventListener('mouseenter', () => (isScrolling = false));
-				gallery.addEventListener('mouseleave', () => (isScrolling = true));
+			// Scroll every 3 seconds (1s for animation + 2s pause)
+			scrollInterval = setInterval(scrollToNext, 3000);
 
-				const autoScroll = (timestamp: number) => {
-					if (!lastTime) lastTime = timestamp;
-					const delta = timestamp - lastTime;
-
-					if (delta >= interval && isScrolling) {
-						lastTime = timestamp - (delta % interval);
-						scrollPos += scrollSpeed;
-						gallery.scrollLeft = scrollPos;
-
-						// Reset to start when reaching the cloned set
-						if (scrollPos >= gallery.scrollWidth / 2) {
-							scrollPos = 0;
-							gallery.scrollLeft = 0;
-						}
-					}
-
-					animationId = requestAnimationFrame(autoScroll);
-				};
-
-				animationId = requestAnimationFrame(autoScroll);
-
-				// Cleanup
-				return () => {
-					cancelAnimationFrame(animationId);
-				};
-			}
+			return () => clearInterval(scrollInterval);
 		}
 	});
 </script>
@@ -416,18 +415,19 @@
 				<!-- For Past Events - Stacked Layout -->
 				<div class="mt-8 space-y-8">
 					<!-- Photo Gallery - Smooth Auto-scrolling -->
-					{#if event.gallery?.length > 0}
-						<div>
+					{#if isPast && event.gallery?.length > 0}
+						<div class="mt-8">
 							<h2 class="mb-6 text-2xl font-semibold text-[#FF7700]">Event Gallery</h2>
 							<div class="relative overflow-hidden">
-								<div class="gallery-scroller scrollbar-hide flex gap-6">
-									{#each event.gallery as image, index}
+								<!-- Gallery Container -->
+								<div class="gallery-scroller scrollbar-hide flex gap-6 overflow-x-auto">
+									{#each event.gallery as image (image)}
 										<div
 											class="gallery-item h-96 w-[85vw] flex-shrink-0 overflow-hidden rounded-xl shadow-lg sm:w-[calc(50%-1.5rem)] md:w-[calc(33%-1.5rem)]"
 										>
 											<img
 												src={`/${image}`}
-												alt="Event photo {index + 1}"
+												alt="Event photo"
 												class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
 											/>
 										</div>
@@ -728,30 +728,14 @@
 
 <style>
 	.gallery-scroller {
-		display: flex;
-		will-change: transform;
-		animation: scroll 5s linear infinite;
-	}
-
-	.gallery-item {
-		flex: 0 0 auto;
-	}
-
-	.scrollbar-hide {
 		-ms-overflow-style: none;
 		scrollbar-width: none;
+		scroll-snap-type: x mandatory;
 	}
-
-	.scrollbar-hide::-webkit-scrollbar {
+	.gallery-scroller::-webkit-scrollbar {
 		display: none;
 	}
-
-	@keyframes scroll {
-		0% {
-			transform: translateX(0);
-		}
-		100% {
-			transform: translateX(calc(-100% / 2));
-		}
+	.gallery-item {
+		scroll-snap-align: start;
 	}
 </style>
