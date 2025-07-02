@@ -1,0 +1,346 @@
+{
+	"events": [
+		{
+			"event_id": "UPCOMING_001",
+			"event_name": "AI Summer School",
+			"event_description": "5-day intensive workshop on cutting-edge AI techniques for advanced students.",
+			"event_start_datetime": "2025-07-10T09:00:00+05:30",
+			"event_end_datetime": "2025-07-14T17:00:00+05:30",
+			"venue": "CSE Department, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "UPCOMING_002",
+			"event_name": "Robotics Workshop",
+			"event_description": "Hands-on workshop on building and programming autonomous robots.",
+			"event_start_datetime": "2025-07-05T10:00:00+05:30",
+			"event_end_datetime": "2025-07-08T16:00:00+05:30",
+			"venue": "Robotics Lab, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "UPCOMING_003",
+			"event_name": "HackNIT 5.0",
+			"event_description": "Annual 36-hour hackathon with prizes worth ₹2 lakhs.",
+			"event_start_datetime": "2025-08-15T10:00:00+05:30",
+			"event_end_datetime": "2025-08-16T22:00:00+05:30",
+			"venue": "CCD Building, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "UPCOMING_004",
+			"event_name": "Tech Symposium",
+			"event_description": "Annual technology conference featuring industry leaders.",
+			"event_start_datetime": "2025-09-20T09:00:00+05:30",
+			"event_end_datetime": "2025-09-21T18:00:00+05:30",
+			"venue": "Auditorium, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "UPCOMING_005",
+			"event_name": "Coding Bootcamp",
+			"event_description": "4-week intensive coding training for placement preparation.",
+			"event_start_datetime": "2025-07-01T08:00:00+05:30",
+			"event_end_datetime": "2025-07-28T20:00:00+05:30",
+			"venue": "CSE Department, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "UPCOMING_006",
+			"event_name": "Startup Pitch Competition",
+			"event_description": "Pitch your startup idea to investors and win seed funding.",
+			"event_start_datetime": "2025-08-10T14:00:00+05:30",
+			"event_end_datetime": "2025-08-10T18:00:00+05:30",
+			"venue": "E-Cell Office, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "UPCOMING_007",
+			"event_name": "Cyber Security Workshop",
+			"event_description": "Learn ethical hacking and cyber defense techniques.",
+			"event_start_datetime": "2025-07-15T10:00:00+05:30",
+			"event_end_datetime": "2025-07-17T16:00:00+05:30",
+			"venue": "CSE Department, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+
+		{
+			"event_id": "ONGOING_001",
+			"event_name": "30-Day ML Bootcamp",
+			"event_description": "Daily sessions on machine learning fundamentals.",
+			"event_start_datetime": "2025-06-01T18:00:00+05:30",
+			"event_end_datetime": "2025-07-30T20:00:00+05:30",
+			"venue": "G307, CSE Department",
+			"poster_image": "poster.jpg",
+			"leaderboard": [
+				{
+					"participant_id": "BOOTCAMP_101",
+					"name": "Aditya Verma",
+					"points": "A+"
+				},
+				{
+					"participant_id": "BOOTCAMP_102",
+					"name": "Priya Patel",
+					"points": "A"
+				}
+			],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "ONGOING_002",
+			"event_name": "Kaggle Competition",
+			"event_description": "Monthly data science challenge with cash prizes.",
+			"event_start_datetime": "2025-06-20T00:00:00+05:30",
+			"event_end_datetime": "2025-07-20T23:59:00+05:30",
+			"venue": "Online",
+			"poster_image": "poster.jpg",
+			"leaderboard": [
+				{ "team_id": "KAGGLE_01", "team_name": "Data Wizards", "points": 0.95 },
+				{ "team_id": "KAGGLE_02", "team_name": "Feature Engineers", "points": 0.93 }
+			],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "ONGOING_003",
+			"event_name": "Coding Challenge",
+			"event_description": "Weekly competitive programming contest.",
+			"event_start_datetime": "2025-06-24T18:00:00+05:30",
+			"event_end_datetime": "2025-08-24T21:00:00+05:30",
+			"venue": "Online",
+			"poster_image": "poster.jpg",
+			"leaderboard": [
+				{ "participant_id": "CP_101", "name": "Rahul Sharma", "points": 850 },
+				{ "participant_id": "CP_102", "name": "Neha Gupta", "points": 780 }
+			],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "ONGOING_004",
+			"event_name": "Tech Exhibition",
+			"event_description": "Showcase of student projects and innovations.",
+			"event_start_datetime": "2025-06-25T10:00:00+05:30",
+			"event_end_datetime": "2025-08-27T18:00:00+05:30",
+			"venue": "Main Building, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "ONGOING_005",
+			"event_name": "Web Dev Workshop",
+			"event_description": "Hands-on training on modern web development.",
+			"event_start_datetime": "2025-06-26T14:00:00+05:30",
+			"event_end_datetime": "2025-08-28T17:00:00+05:30",
+			"venue": "CSE Department, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "ONGOING_006",
+			"event_name": "Research Seminar Series",
+			"event_description": "Weekly talks by faculty and PhD scholars.",
+			"event_start_datetime": "2025-06-01T15:00:00+05:30",
+			"event_end_datetime": "2025-08-31T16:30:00+05:30",
+			"venue": "Seminar Hall, CSE Department",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "ONGOING_007",
+			"event_name": "Internship Fair",
+			"event_description": "Connect with companies offering summer internships.",
+			"event_start_datetime": "2025-06-26T09:00:00+05:30",
+			"event_end_datetime": "2025-07-28T17:00:00+05:30",
+			"venue": "Placement Cell, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "",
+			"post_event_task": "",
+			"resources": [],
+			"gallery": []
+		},
+		{
+			"event_id": "PAST_001",
+			"event_name": "Tech Fest 2025",
+			"event_description": "Annual technical festival with competitions and workshops.",
+			"event_start_datetime": "2025-03-15T09:00:00+05:30",
+			"event_end_datetime": "2025-03-17T20:00:00+05:30",
+			"venue": "Various Venues, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [
+				{ "team_id": "TF_101", "team_name": "Tech Titans", "points": 120 },
+				{ "team_id": "TF_102", "team_name": "Innovators", "points": 110 }
+			],
+			"feedback_form": "https://forms.gle/techfest2025",
+			"post_event_task": "Submit feedback about the events you attended.",
+			"resources": [
+				"https://drive.google.com/techfest_photos.zip",
+				"https://drive.google.com/workshop_materials.zip"
+			],
+			"gallery": ["gallery/image1.jpg", "gallery/image2.jpg", "gallery/image3.jpg"]
+		},
+		{
+			"event_id": "PAST_002",
+			"event_name": "Alumni Talk Series",
+			"event_description": "Successful alumni share their career journeys.",
+			"event_start_datetime": "2025-05-10T15:00:00+05:30",
+			"event_end_datetime": "2025-05-12T17:00:00+05:30",
+			"venue": "Alumni Hall, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "https://forms.gle/alumnitalks2025",
+			"post_event_task": "Submit your takeaways from the talks.",
+			"resources": [
+				"https://drive.google.com/alumni_slides.pdf",
+				"https://drive.google.com/career_advice.pdf"
+			],
+			"gallery": ["gallery/image1.jpg", "gallery/image2.jpg", "gallery/image3.jpg"]
+		},
+		{
+			"event_id": "PAST_003",
+			"event_name": "Hackathon 2025",
+			"event_description": "24-hour coding competition to solve real-world problems.",
+			"event_start_datetime": "2025-04-20T10:00:00+05:30",
+			"event_end_datetime": "2025-04-21T10:00:00+05:30",
+			"venue": "CCD Building, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [
+				{ "team_id": "HACK_101", "team_name": "Code Warriors", "points": 95 },
+				{ "team_id": "HACK_102", "team_name": "Binary Brains", "points": 90 }
+			],
+			"feedback_form": "https://forms.gle/hackathon2025",
+			"post_event_task": "Submit your project documentation.",
+			"resources": [
+				"https://drive.google.com/hackathon_problems.pdf",
+				"https://drive.google.com/winning_solutions.zip"
+			],
+			"gallery": ["gallery/image1.jpg", "gallery/image2.jpg", "gallery/image3.jpg"]
+		},
+		{
+			"event_id": "PAST_004",
+			"event_name": "Research Paper Competition",
+			"event_description": "Undergraduate research paper presentation event.",
+			"event_start_datetime": "2025-02-15T09:00:00+05:30",
+			"event_end_datetime": "2025-02-16T17:00:00+05:30",
+			"venue": "Research Center, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [
+				{ "participant_id": "RP_101", "name": "Amit Kumar", "points": "1st Prize" },
+				{ "participant_id": "RP_102", "name": "Sneha Roy", "points": "2nd Prize" }
+			],
+			"feedback_form": "https://forms.gle/researchcomp2025",
+			"post_event_task": "Submit final versions of your papers.",
+			"resources": ["https://drive.google.com/winning_papers.zip"],
+			"gallery": ["gallery/image1.jpg", "gallery/image2.jpg", "gallery/image3.jpg"]
+		},
+		{
+			"event_id": "PAST_005",
+			"event_name": "Career Guidance Workshop",
+			"event_description": "Pre-placement training for final year students.",
+			"event_start_datetime": "2025-01-10T10:00:00+05:30",
+			"event_end_datetime": "2025-01-12T16:00:00+05:30",
+			"venue": "Placement Cell, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [],
+			"feedback_form": "https://forms.gle/careerworkshop2025",
+			"post_event_task": "Submit your updated resumes.",
+			"resources": [
+				"https://drive.google.com/resume_guide.pdf",
+				"https://drive.google.com/interview_tips.pdf"
+			],
+			"gallery": ["gallery/image1.jpg", "gallery/image2.jpg", "gallery/image3.jpg"]
+		},
+		{
+			"event_id": "PAST_006",
+			"event_name": "Cultural Fest",
+			"event_description": "Annual cultural festival with performances and competitions.",
+			"event_start_datetime": "2025-03-01T09:00:00+05:30",
+			"event_end_datetime": "2025-03-03T22:00:00+05:30",
+			"venue": "Open Air Theater, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [
+				{ "team_id": "CF_101", "team_name": "Drama Club", "points": "Best Performance" },
+				{ "team_id": "CF_102", "team_name": "Music Society", "points": "Runner Up" }
+			],
+			"feedback_form": "https://forms.gle/culturals2025",
+			"post_event_task": "Submit photos from the event.",
+			"resources": ["https://drive.google.com/event_highlights.mp4"],
+			"gallery": ["gallery/image1.jpg", "gallery/image2.jpg", "gallery/image3.jpg"]
+		},
+		{
+			"event_id": "PAST_007",
+			"event_name": "Sports Meet",
+			"event_description": "Annual inter-department sports competition.",
+			"event_start_datetime": "2025-02-05T08:00:00+05:30",
+			"event_end_datetime": "2025-02-07T18:00:00+05:30",
+			"venue": "Sports Complex, NIT Silchar",
+			"poster_image": "poster.jpg",
+			"leaderboard": [
+				{ "team_id": "SP_101", "team_name": "Mechanical", "points": 120 },
+				{ "team_id": "SP_102", "team_name": "CSE", "points": 110 }
+			],
+			"feedback_form": "https://forms.gle/sportsmeet2025",
+			"post_event_task": "Submit suggestions for next year.",
+			"resources": [
+				"https://drive.google.com/results.pdf",
+				"https://drive.google.com/sports_photos.zip"
+			],
+			"gallery": ["gallery/image1.jpg", "gallery/image2.jpg", "gallery/image3.jpg"]
+		}
+	]
+}
